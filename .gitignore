@@ -1,1 +1,7 @@
 seq_test.go
+
+either_test.go
+helpers_test.go
+
+main.go
+pipe.templ
