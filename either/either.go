@@ -8,6 +8,14 @@ type Either[L, R any] struct {
 	isLeft bool
 }
 
+func IsLeft[L, R any](e Either[L, R]) bool {
+	return e.isLeft
+}
+
+func IsRight[L, R any](e Either[L, R]) bool {
+	return !e.isLeft
+}
+
 func Left[L, R any](l L) Either[L, R] {
 	return Either[L, R]{
 		left:   l,
